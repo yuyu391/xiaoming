@@ -52,9 +52,14 @@
 3. python manage.py startapp polls
 
 ## polls/views.py
+	from django.htt import HttpResponse
+	def index(request):
+		return HttpResponse("Hello world, polls index.");
+## touch polls/urls.py
+	from django.urls import path
+	from .import views
 
-from django.htt import HttpResponse
-def index(request):
-	return HttpResponse("Hello world, polls index.");
-
+	urlpatterns = [
+		path('', views.index, name='index'),
+	]
 	
