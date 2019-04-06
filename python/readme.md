@@ -1,5 +1,5 @@
-###python 安装
-##unbuntu 16.04 
+### python 安装
+## unbuntu 16.04 
 	unbuntu 16.04 系统默认的 python 是 2.x 版本，手动安装python3.5以上到
 自定义目录。
 	建立软链接：sudo l  -s /usr/bin/python3 /usr/bin/python3.5/bin/python
@@ -35,5 +35,19 @@
 	mkvirtual virName
 	workon virName
 	deactivate
+
+### Djongo
+
+## djongo install
+	workon xiaoxiao
+	pip install django
+	pip list
+
+## djongo version
+	python -m django --version
+	django-admin help
+
+1. django-admin startproject mysite
+2. python manage.pyt runserver 0.0.0.0:8080
 
 	
