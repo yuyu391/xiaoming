@@ -48,6 +48,13 @@
 	django-admin help
 
 1. django-admin startproject mysite
-2. python manage.pyt runserver 0.0.0.0:8080
+2. python manage.py runserver 0.0.0.0:8080
+3. python manage.py startapp polls
+
+## polls/views.py
+
+from django.htt import HttpResponse
+def index(request):
+	return HttpResponse("Hello world, polls index.");
 
 	
